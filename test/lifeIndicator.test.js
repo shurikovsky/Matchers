@@ -1,4 +1,4 @@
-import lifeIndicator from '..lifeIndicator.js';
+import lifeIndicator from '../lifeIndicator.js';
 let healthObject = [
     {name: "мечник", health: 10},
     {name: 'маг', health: 100},
