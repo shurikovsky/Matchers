@@ -1,9 +1,3 @@
-export default function lifeIndicator (options = {}) {
-    if (options.health < 15) {
-        return 'critical';
-    }
-    if (options.health > 15 && options.health < 50 ) {
-        return 'wounded';
-    }
-    return 'healthy';
+export default function lifeIndicator (options = [{}]) {
+  return options.sort((a,b) => b.health - a.health);
 };
